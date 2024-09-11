@@ -48,6 +48,7 @@ class StreamsCalculateTotalCostTest {
         final int PRICE_TABLET = 149;
         final int PRICE_PHONE = 237;
         final int PRICE_TABLE = 3400;
+        // total price of above: 7286
 
         var tv = new Product("TV", PRICE_TV);
         var laptop = new Product("Laptop", PRICE_LAPTOP);

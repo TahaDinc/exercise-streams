@@ -5,8 +5,8 @@ import java.util.stream.Collectors;
 
 public class StreamsCreateFullSentence {
     String createAFullSentenceFromTheList(List<String> input) {
-        // TODO: implement
-
-        return "";
+        // create a full sentence from the list and return it
+        return input.stream()
+                .collect(Collectors.joining(" "));
     }
 }

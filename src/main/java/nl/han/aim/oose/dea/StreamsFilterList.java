@@ -6,14 +6,18 @@ import java.util.stream.Collectors;
 public class StreamsFilterList {
 
     List<String> filterStringsShorterThanThreeCharacters(List<String> input) {
-        // TODO: implement
-
+        input = input.stream()
+                .filter(s -> s.length() < 3)
+                .collect(Collectors.toList());
+        System.out.println(input);
         return input;
     }
 
     List<String> filterStringsThatContainOnlyNumerals(List<String> input) {
-        // TODO: implement
-
+        // filter strings that contain only numerals
+        input = input.stream()
+                .filter(s -> s.matches("[0-9]+"))
+                .collect(Collectors.toList());
         return input;
     }
 }

@@ -5,8 +5,9 @@ import java.util.List;
 
 public class StreamsFindShortestString {
     String findShortestString(List<String> input) {
-        // TODO: implement
-
-        return "";
+        // find the shortest string and return it, if the list is empty return an empty string
+        return input.stream()
+                .min(Comparator.comparing(String::length))
+                .orElse(null);
     }
 }
